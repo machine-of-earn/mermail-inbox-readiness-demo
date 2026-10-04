@@ -1,26 +1,14 @@
-<!DOCTYPE html>
-<html lang="en"><head><meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<title>mermail-inbox-readiness — demo</title>
-<style>
- body{margin:0;background:#0d1117;color:#e6edf3;font:16px/1.55 -apple-system,Segoe UI,Roboto,sans-serif}
- main{max-width:900px;margin:0 auto;padding:32px 20px 64px}
- h1{font-size:22px;margin:0 0 4px} .sub{color:#8b949e;font-size:14px;margin:0 0 24px}
- video{width:100%;border-radius:10px;border:1px solid #30363d;background:#000}
- a{color:#6ea8ff} ul{padding-left:20px} li{margin:6px 0}
- .box{border:1px solid #30363d;border-radius:10px;padding:16px 18px;margin-top:24px;background:#11161d}
-</style></head><body><main>
-<h1>mermail-inbox-readiness — demo</h1>
-<p class="sub">A commissioning skill for Mermail: prove a mailbox can actually receive mail before anything is wired to it.</p>
-<p class="sub">The demo below is the full <strong>4:39</strong> take against the hosted Mermail MCP server at <code>https://console.mermail.app/mcp</code> — one prompt, three approvals, the skill's own tool calls on screen. Model turns are played back at 1.45x with the factor burned into the frame; nothing is cut.</p>
-<video controls preload="metadata" poster="poster.png"><source src="demo.mp4" type="video/mp4">Your browser cannot play this file — <a href="demo.mp4">download it</a>.</video>
-<div class="box">
-<ul>
-<li>Pull request to the Mermail Skills repository: <a href="https://github.com/Nudgen-Marketing/mermail-skills/pull/108">Nudgen-Marketing/mermail-skills #108</a></li>
-<li>Skill source (branch mirror): <a href="https://github.com/machine-of-earn/mermail-skills/tree/feat/mermail-inbox-readiness">machine-of-earn/mermail-skills @ feat/mermail-inbox-readiness</a></li>
-<li>Rehearse the same workflow with no API key: <a href="https://github.com/machine-of-earn/mermail-inbox-readiness-demo/tree/main/rehearsal">rehearsal/</a> — an offline MCP stand-in for the Mermail server</li>
-<li>Direct video file: <a href="demo.mp4">demo.mp4</a> (4:39)</li>
-<li>Short cut, same take, model turns at 3.3x: <a href="demo-short.mp4">demo-short.mp4</a> (2:18)</li>
-</ul>
-</div>
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Mermail inbox readiness — approval repair</title><style>body{margin:0;background:#0b1220;color:#e5edf7;font:16px/1.6 system-ui}main{max-width:920px;margin:auto;padding:30px 20px}h1{font-size:27px}h2{font-size:21px;margin-top:36px}a{color:#9ec5fa}video{width:100%;background:#111827;border:1px solid #334155;border-radius:8px}.note{border-left:3px solid #8aa7ce;padding:12px 18px;background:#132035}small{color:#b2bed0}</style></head><body><main>
+<h1>Inbox readiness: approval follows the exact action</h1>
+<p>October 4 repair to the existing <a href="https://github.com/Nudgen-Marketing/mermail-skills/pull/108">Mermail contribution #108</a>.</p>
+<p class="note">The original video changed the approved recipient and sent without another approval. The revised skill stops, presents a complete replacement preview, and waits. The demonstration below shows actual local fixture executions, followed by separately dated historical delivery evidence.</p>
+<video controls preload="metadata" poster="poster.png"><source src="demo.mp4" type="video/mp4"></video>
+<p><strong>3:37 — abridged transcript playback.</strong> Codex CLI with gpt-6.1-sol, using the submitted skill and references as session instructions and a local MCP fixture. This is runtime tool-call evidence, not a live Mermail delivery or a plugin-routing test. No new real message was sent.</p>
+<ul><li>Changed recipient: zero send calls; complete new preview; a separate approval permits one fixture send.</li><li>Unchanged control: one send call for the identical approved action.</li><li>Fixture authentication stays unknown. Its old receipt timestamp is not accepted as fresh delivery.</li><li>Current live initialization returned HTTP 401. Current live readiness was not verified.</li></ul>
+<p><a href="repair-transcript.txt">Complete prompts, tool calls and agent responses</a> · <a href="repair-validation.json">Verification and limits</a> · <a href="repair-fixture.py">Network-free fixture source</a> · <a href="https://github.com/machine-of-earn/mermail-skills/tree/feat/mermail-inbox-readiness/skills/mermail-inbox-readiness">Revised skill</a></p>
+<h2>Preserved original live recording — August 28</h2>
+<p>This original 4:39 recording is unchanged. At 4:10 it shows the approval error; at 4:30 its report includes an inbound receipt dated August 27. That receipt remains historical evidence. It is not proof of a corrected live send.</p>
+<video controls preload="none"><source src="demo-original-20260828.mp4" type="video/mp4"></video>
+<p><a href="demo-original-20260828.mp4">Download original</a> · <a href="demo-short.mp4">Original short cut (also contains the old behavior)</a></p>
+<small>Existing presentation maintained; no new entry or resubmission. Sponsor acceptance and any award remain external.</small>
 </main></body></html>
