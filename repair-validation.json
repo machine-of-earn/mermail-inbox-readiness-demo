@@ -1,0 +1,19 @@
+{
+  "catalog": "Validated 18 skills and 82 business tools.",
+  "plugin_manifest": "claude plugin validate --strict passed",
+  "skill_validator": "Skill is valid!",
+  "behavior": "Two actual Codex sessions, five turns; changed rejection/new preview/reapproval and unchanged control passed. Exact send payloads verified.",
+  "real_send_calls": 0,
+  "fixture_send_calls": 2,
+  "live_read": "initialize 401; no live tool calls",
+  "skill_sha256": "05205f846d9271aedfda4c189188932fe57f133f5823dec16b1b40b574e2fd7e",
+  "original_video_sha256": "5e2ba6f23fe2d1c2c7dfe6fb56b091d76e17a4ecaf28c7f5494291cf7df06f3b",
+  "model": {
+    "model": "gpt-6.1-sol",
+    "effort": "high",
+    "client": "Codex CLI",
+    "cli_version": "codex-cli 0.160.0",
+    "instruction_loading": "Submitted SKILL.md, its three references and owning compose SKILL.md supplied as developer instructions; no plugin routing claim",
+    "tools": "Only local stdio MCP fixture, shell/web/apps disabled"
+  }
+}
